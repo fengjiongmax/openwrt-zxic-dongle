@@ -22,7 +22,7 @@ Bus 001 Device 046: ID 19d2:0536 ZTE WCDMA Technologies MSM ALK Mobile Boardband
 根据openwrt的文档:https://openwrt.org/docs/guide-user/network/wan/wwan/usb-modeswitching
 ，我们可以临时写一个usb-modeswitch的配置文件来测试能否正常切换模式。
 
-在写配置文件的时候，要将目标识别符的冒号两端分别转换为10位数，同样以我手上的设备为例：  
+在写配置文件的时候，要将目标识别符的冒号两端分别由16进制转换为10进制，同样以我手上的设备为例：  
 `19d2:0536`:  
 
 `0x19d2`->`6610`  
